@@ -55,7 +55,7 @@ const Registration = () => {
         <div className="flex justify-between items-center md:w-[65%] h-[392px] dark:border-[#D2D2D2] border-[1px] rounded-2xl p-6 ">
           {isRegSelected ? <RegisterYourself /> : <AgentAssisted />}
 
-          <div className="h-[109px] w-[2px] dark:bg-[#1E1E1E]" />
+          {/* <div className="h-[109px] w-[2px] dark:bg-[#1E1E1E]" /> */}
         </div>
       </div>
       {/* This ends the medium size screen device width div */}

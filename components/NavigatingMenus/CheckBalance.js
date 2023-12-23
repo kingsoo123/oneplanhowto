@@ -8,11 +8,11 @@ const CheckBalanceTab = () => {
   const [isToggle, setIsToggle] = useState(false);
   return (
     <div className="w-full border-[1px] border-[#D1DAE5] rounded-2xl mt-[30px]">
-      <div className="depositTab space-y-4">
-        <span
-          className="w-full flex justify-between items-center cursor-pointer"
-          onClick={() => setIsToggle(!isToggle)}
-        >
+      <div
+        className="depositTab space-y-4 cursor-pointer"
+        onClick={() => setIsToggle(!isToggle)}
+      >
+        <span className="w-full flex justify-between items-center">
           <p className="text-[#133B69] font-semibold text-[20px]">
             Check Balance
           </p>

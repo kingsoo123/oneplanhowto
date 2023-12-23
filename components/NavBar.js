@@ -12,8 +12,11 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
   const showDrawer = () => {
-    setOpen(!open);
+    setOpen(true);
   };
+  // const closeDrawer = () => {
+  //   setOpen(false);
+  // };
   const onClose = () => {
     setOpen(false);
   };
@@ -40,7 +43,9 @@ const NavBar = () => {
             <p className="text-[#133B69] text-[16px] font-normal">Loan</p>
             <span
               className="flex justify-between items-center space-x-4 cursor-pointer"
-              onClick={showDrawer}
+              //onClick={showDrawer}
+              onMouseOver={showDrawer}
+              //onMouseOut={closeDrawer}
             >
               <p className="text-[#133B69] text-[16px] font-normal">Learn</p>
               <IoIosArrowDown />
@@ -68,13 +73,13 @@ const NavBar = () => {
       <Drawer
         placement="top"
         closable={false}
-        onClose={onClose}
+        //onClose={onClose}
         open={open}
         getContainer={false}
         height={150}
         width={200}
       >
-        <div className="space-y-4">
+        <div className="space-y-4" onMouseLeave={onClose}>
           <p className="text-[#133B69] text-[16px] font-normal cursor-pointer">
             About us
           </p>

@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const MobileModal = ({ setShow }) => {
   const [isToggle, setIsToggle] = useState(false);
   return (
-    <div className="fixed z-10 left-0 top-0 w-full h-full overflow-auto backdrop">
+    <div className="fixed z-10 left-0 top-0 bottom-0 right-0 w-full  backdrop">
       <div className="w-[100%] bg-[#17477E] rounded-b-3xl py-6 px-3">
         <div className="w-full flex justify-end items-center">
           <IoCloseOutline
