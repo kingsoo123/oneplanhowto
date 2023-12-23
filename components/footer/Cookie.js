@@ -26,7 +26,7 @@ const CookieSect = () => {
         Cancel
       </button>
 
-      <div className="absolute right-24 -mt-[140px] z-20 w-[70px] h-[70px] cursor-pointer">
+      <div className="hidden md:block absolute right-24 -mt-[140px] z-20 w-[70px] h-[70px] cursor-pointer">
         <Image src={chat} alt="chat" className="w-full h-full rounded-lg" />
       </div>
     </div>
