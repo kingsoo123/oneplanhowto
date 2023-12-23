@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import user1 from "../../assets/User_Square.png";
 import DepositTabs from "../NavigatingMenus/DepositTabs";
 
@@ -18,7 +19,11 @@ const FirstTab = () => {
           onClick={() => setIsToggle(!isToggle)}
         >
           <Image src={user1} alt="user" width={40} height={40} />
-          <IoIosArrowForward />
+          {isToggle ? (
+            <IoIosArrowDown className="text-[#036C4F] w-[20px] h-[20px]" />
+          ) : (
+            <IoIosArrowForward className="text-[#036C4F] w-[20px] h-[20px]" />
+          )}
         </span>
 
         <p className="text-[#036C4F] font-semibold text-[20px]">

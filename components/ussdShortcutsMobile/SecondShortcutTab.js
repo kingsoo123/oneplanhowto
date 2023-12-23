@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import receipt from "../../assets/receipt-item.png";
 import documentfav from "../../assets/document-favorite.png";
 import DepositTabs from "../NavigatingMenus/DepositTabs";
@@ -19,7 +20,11 @@ const SecondShortCutTab = () => {
           onClick={() => setIsToggle(!isToggle)}
         >
           <Image src={receipt} alt="money" width={40} height={40} />
-          <IoIosArrowForward />
+          {isToggle ? (
+            <IoIosArrowDown className="w-[20px] h-[20px]" />
+          ) : (
+            <IoIosArrowForward className="w-[20px] h-[20px]" />
+          )}
         </span>
         <p className="text-[#1E1E1E] font-semibold text-[20px]">
           Dial *434*12#

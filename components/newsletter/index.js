@@ -13,7 +13,7 @@ const NewsLetter = () => {
           />
           <button
             type="button"
-            className="h-[52px] w-[117px] text-[#7a899b] bg-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-white"
+            className="h-[52px] w-[117px] text-[#17477E] bg-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-white"
           >
             Sign up
           </button>
