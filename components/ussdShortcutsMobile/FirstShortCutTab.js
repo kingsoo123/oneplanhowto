@@ -13,11 +13,9 @@ const FirstShortCutTab = () => {
     <div className="md:hidden w-full mt-[20px] p-3">
       <div
         className={`rgbaBG3 w-[100%] h-[177px] dark:border-[#F6C911] rounded-2xl p-3 space-y-4 cursor-pointer`}
+        onClick={() => setIsToggle(!isToggle)}
       >
-        <span
-          className="w-full flex justify-between items-center cursor-pointer"
-          onClick={() => setIsToggle(!isToggle)}
-        >
+        <span className="w-full flex justify-between items-center">
           <Image src={money} alt="money" width={40} height={40} />
           {isToggle ? (
             <IoIosArrowDown className="w-[20px] h-[20px]" />
