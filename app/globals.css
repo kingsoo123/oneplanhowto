@@ -54,14 +54,14 @@ html {
   padding: 16px;
 }
 
-:where(.css-dev-only-do-not-override-gzal6t).ant-drawer {
+.ant-drawer {
   position: fixed;
   z-index: 1000;
   pointer-events: none;
   top: 60px;
   left: 57%;
   right: 28%;
-  outline: none;
+  outline: none !important;
 }
 
 .ant-drawer-mask{
