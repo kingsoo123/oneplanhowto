@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
+
+body{
+  word-spacing: 1px;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +21,59 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+.rgbaBG{
+  background-color: rgba(205, 230, 223, 0.3);
+}
+
+.rgbaBG2{
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+.rgbaBG3{
+  background-color: rgba(253, 244, 207, 0.4);
+}
+
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+/* ::-webkit-scrollbar-thumb {
+  background: #FF0000;
+} */
+
+
+.depositTab{
+  padding: 16px;
+}
+
+:where(.css-dev-only-do-not-override-gzal6t).ant-drawer {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  top: 60px;
+  left: 57%;
+  right: 28%;
+  outline: none;
+}
+
+.ant-drawer-mask{
+  position: absolute;
+    inset: 0;
+    z-index: 1000;
+    pointer-events: auto;
+    outline: none !important;
+    background-color: transparent !important;
+}
+
+.backdrop {
+  backdrop-filter: blur(3px);
+  background: rgba(16, 19, 35, 0.4);
 }
