@@ -7,6 +7,7 @@ import UssdAgent from "@/components/UssdShortCut";
 import FooterMenu from "@/components/footer/FooterMenu";
 import Flag from "@/components/footer/Flag";
 import CookieSect from "@/components/footer/Cookie";
+import NewsLetter from "@/components/newsletter";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <UssdAgent />
       <NavigatingMenu />
       <MyProfile />
+      <NewsLetter />
       <FooterMenu />
       <Flag />
       <CookieSect />
