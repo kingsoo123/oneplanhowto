@@ -27,7 +27,7 @@ const NavBar = () => {
         <Image
           src={logo}
           alt="logo"
-          className=" w-[80px] md:w-[115px] md:h-[61px]"
+          className="w-[80px] md:w-[115px] md:h-[61px]"
         />
         <CiMenuBurger
           className="md:hidden w-[50px] h-[35px] text-[#133B69]"

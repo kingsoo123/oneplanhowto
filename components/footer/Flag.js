@@ -1,6 +1,7 @@
 import Image from "next/image";
 import npra from "../../assets/npra-logo.png";
 import gflag from "../../assets/gflag.png";
+import chat from "../../assets/chat.png";
 
 const Flag = () => {
   return (
@@ -16,7 +17,6 @@ const Flag = () => {
           </p>
         </span>
       </div>
-
       <div className="hidden w-[1px] h-[44px] bg-[#B4B4B4]" />
       <div className="flex md:justify-between items-center space-x-2 mt-7 md:mt-0">
         <Image src={gflag} alt="npra" width={37} height={40} />
@@ -24,6 +24,10 @@ const Flag = () => {
           17 Garden Road, East Legon, Accra
         </p>
       </div>
+
+      {/* <div className="absolute right-20 z-20">
+        <Image src={chat} alt="chat" className="w-[250px] h-[250px]" />
+      </div> */}
     </div>
   );
 };
