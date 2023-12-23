@@ -23,7 +23,7 @@ const NavigatingMenu = () => {
           <span className="font-semibold">[1] Pension</span>
         </p>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-start mt-12 space-y-3 md:space-x-12">
+      <div className="flex flex-col md:flex-row justify-between items-start mt-12  md:space-x-12">
         <div className="w-full md:w-[50%] md:bg-[#F6F8FA] p-3 md:px-10 md:py-8 md:rounded-2xl">
           <span className="flex justify-start items-center space-x-2">
             <Image src={wallet} alt="wallet" width={40} height={40} />
