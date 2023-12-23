@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import DepositTabs from "./DepositTabs";
 
 const BeneficiariesTab = () => {
@@ -16,7 +17,7 @@ const BeneficiariesTab = () => {
           <p className="text-[#133B69] font-semibold text-[20px]">
             Beneficiaries
           </p>
-          <IoIosArrowForward />
+          {isToggle ? <IoIosArrowDown /> : <IoIosArrowForward />}
         </span>
         <p className="font-normal text-sm">
           Step by step guide on how to deposit to your account
