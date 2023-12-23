@@ -27,7 +27,7 @@ const NavBar = () => {
           className=" w-[80px] md:w-[115px] md:h-[61px]"
         />
         <CiMenuBurger
-          className="w-[50px] h-[35px] text-[#133B69]"
+          className="md:hidden w-[50px] h-[35px] text-[#133B69]"
           onClick={() => setShow(true)}
         />
       </div>
@@ -75,10 +75,14 @@ const NavBar = () => {
         width={200}
       >
         <div className="space-y-4">
-          <p className="text-[#133B69] text-[16px] font-normal">About us</p>
-          <p className="text-[#133B69] text-[16px] font-normal">Contact us</p>
+          <p className="text-[#133B69] text-[16px] font-normal cursor-pointer">
+            About us
+          </p>
+          <p className="text-[#133B69] text-[16px] font-normal cursor-pointer">
+            Contact us
+          </p>
           <div>
-            <p className="text-[#133B69] text-[16px] font-normal">
+            <p className="text-[#133B69] text-[16px] font-normal cursor-pointer">
               How to use *434#
             </p>
           </div>
