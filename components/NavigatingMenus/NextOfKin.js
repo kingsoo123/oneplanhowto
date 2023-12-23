@@ -47,7 +47,7 @@ const NextOfKinTab = () => {
 
       {isToggle && (
         <>
-          <div className="bg-[#D1DAE5] w-[90%] h-[1px]"></div>
+          <div className="bg-[#D1DAE5] w-[100%] h-[1px]"></div>
           <DepositTabs />
         </>
       )}
