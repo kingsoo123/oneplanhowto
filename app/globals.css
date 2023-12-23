@@ -58,9 +58,9 @@ html {
   position: fixed;
   z-index: 1000;
   pointer-events: none;
-  top: 60px;
-  left: 57%;
-  right: 28%;
+  top: 60px !important;
+  left: 57% !important;
+  right: 28% !important;
   outline: none !important;
 }
 
