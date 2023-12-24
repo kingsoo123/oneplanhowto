@@ -48,7 +48,7 @@ const NavBar = () => {
               //onMouseOut={closeDrawer}
             >
               <p className="text-[#133B69] text-[16px] font-normal">Learn</p>
-              <IoIosArrowDown />
+              <IoIosArrowDown className="text-[#17477E] w-[20px] h-[20px]" />
             </span>
           </span>
         </div>
