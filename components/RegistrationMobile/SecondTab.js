@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import user2 from "../../assets/user_square2.png";
 import DepositTabs from "../NavigatingMenus/DepositTabs";
+import SecondTabs from "./SecondTabs";
 
 const SecondTab = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -36,7 +37,7 @@ const SecondTab = () => {
       {isToggle && (
         <>
           <div className="bg-[#D1DAE5] w-[90%] h-[1px]"></div>
-          <DepositTabs />
+          <SecondTabs />
         </>
       )}
     </div>

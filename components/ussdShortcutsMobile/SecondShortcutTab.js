@@ -7,6 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import receipt from "../../assets/receipt-item.png";
 import documentfav from "../../assets/document-favorite.png";
 import DepositTabs from "../NavigatingMenus/DepositTabs";
+import SecondTabs from "./SecondTabs";
 
 const SecondShortCutTab = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -35,7 +36,7 @@ const SecondShortCutTab = () => {
       {isToggle && (
         <>
           <div className="bg-[#D1DAE5] w-[90%] h-[1px]"></div>
-          <DepositTabs />
+          <SecondTabs />
         </>
       )}
     </div>

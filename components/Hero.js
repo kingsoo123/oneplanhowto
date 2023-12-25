@@ -3,7 +3,7 @@ import heroimg from "../assets/hero-image.png";
 const Hero = () => {
   return (
     <div className="pl-0 pr-0 md:pl-[80px] md:pr-[80px] mt-[30px]">
-      <div className="flex justify-center items-center pt-[70px] px-12">
+      <div className="flex justify-center items-center md:pt-[70px] pt-[10px] px-12">
         <p className="text-[#133B69] font-semibold text-center text-3xl md:text-[56px]">
           Using the *434# Short-code
         </p>

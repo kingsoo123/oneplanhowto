@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import documentfav from "../../assets/document-favorite.png";
 import DepositTabs from "../NavigatingMenus/DepositTabs";
+import ThirdTabs from "./ThirdTabs";
 
 const ThirdShortCutTab = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -34,7 +35,7 @@ const ThirdShortCutTab = () => {
       {isToggle && (
         <>
           <div className="bg-[#D1DAE5] w-[90%] h-[1px]"></div>
-          <DepositTabs />
+          <ThirdTabs />
         </>
       )}
     </div>

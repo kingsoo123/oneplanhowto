@@ -5,7 +5,7 @@ import user from "../../assets/user-2.png";
 
 const MyProfile = () => {
   return (
-    <div className="md:pl-[80px] md:pr-[80px] mt-[70px]">
+    <div className="md:pl-[80px] md:pr-[80px] md:mt-[70px] mt-[10px]">
       <div className="w-[100%] md:bg-[#F6F8FA] p-3 md:px-10 md:py-8 md:rounded-2xl">
         <span className="flex justify-start items-center cursor-pointer space-x-3">
           <Image src={user} alt="user" width={40} height={40} />

@@ -11,7 +11,7 @@ import documentfav from "../assets/document-favorite.png";
 
 const NavigatingMenu = () => {
   return (
-    <div className="md:pl-[80px] md:pr-[80px] mt-[70px]">
+    <div className="md:pl-[80px] md:pr-[80px] md:mt-[70px] mt-[30px]">
       <div className="flex justify-center items-center">
         <p className="text-[#133B69] font-semibold text-center text-3xl md:text-[40px]">
           Navigating the Menu
@@ -19,8 +19,8 @@ const NavigatingMenu = () => {
       </div>
       <div className="flex justify-center items-center mt-4">
         <p className="text-[#696969] font-normal text-center md:text-[24px]">
-          Dial <span className="font-semibold">*434#,</span> Select{" "}
-          <span className="font-semibold">[1] Pension</span>
+          Dial <span className="md:font-semibold">*434#,</span> Select{" "}
+          <span className="md:font-semibold">[1] Pension</span>
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-start mt-12  md:space-x-12">
@@ -28,7 +28,7 @@ const NavigatingMenu = () => {
           <span className="flex justify-start items-center space-x-2">
             <Image src={wallet} alt="wallet" width={40} height={40} />
             <p className="text-[#133B69] font-normal text-[24px]">
-              TRANSACTION
+              TRANSACTIONS
             </p>
           </span>
           <DepositTab />

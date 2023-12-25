@@ -16,7 +16,7 @@ const UssdAgent = () => {
   const [toggle, SetToggle] = useState("one");
 
   return (
-    <div className="md:pl-[80px] md:pr-[80px] mt-[70px]">
+    <div className="md:pl-[80px] md:pr-[80px] md:mt-[70px] mt-[30px]">
       <div className="flex justify-center items-center">
         <p className="text-[#133B69] font-semibold text-center text-3xl md:text-[40px]">
           USSD Shortcuts
@@ -36,8 +36,7 @@ const UssdAgent = () => {
               Dial *434*11#
             </p>
             <p className="font-normal text-sm text-[#696969]">
-              Step by step guide on how to register yourself using the One Plan
-              short-code.
+              Step by step guide on how to make a Voluntary Contribution.
             </p>
           </div>
           <div

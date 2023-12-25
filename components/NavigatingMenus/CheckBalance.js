@@ -4,6 +4,7 @@ import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import DepositTabs from "./DepositTabs";
+import CheckBalanceTabs from "./CheckBalanceTabs";
 
 const CheckBalanceTab = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -31,7 +32,7 @@ const CheckBalanceTab = () => {
       {isToggle && (
         <>
           <div className="bg-[#D1DAE5] w-[100%] h-[1px]"></div>
-          <DepositTabs />
+          <CheckBalanceTabs />
         </>
       )}
     </div>

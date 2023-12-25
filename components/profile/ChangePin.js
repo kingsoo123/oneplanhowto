@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import DepositTabs from "../NavigatingMenus/DepositTabs";
+import ChangePinTabs from "./ChangePinTabs";
 
 const ChangePinTab = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -24,7 +25,7 @@ const ChangePinTab = () => {
       {isToggle && (
         <>
           <div className="bg-[#D1DAE5] w-[100%] h-[1px]"></div>
-          <DepositTabs />
+          <ChangePinTabs />
         </>
       )}
     </div>
