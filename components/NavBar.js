@@ -11,6 +11,7 @@ import MobileModal from "./mobileModal";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [show, setShow] = useState(false);
+
   const showDrawer = () => {
     setOpen(true);
   };
@@ -22,7 +23,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center h-[61px] md:pl-[80px] md:pr-[80px] pt-4">
+    <nav className="fixed flex justify-between items-center h-[61px] md:pl-[80px] md:pr-[80px] pt-4 bg-white w-full">
       <div className="h-full w-full md:w-[30%] flex justify-between md:justify-start items-center p-3 md:p-0">
         <Image
           src={logo}
@@ -43,9 +44,7 @@ const NavBar = () => {
             <p className="text-[#133B69] text-[16px] font-normal">Loan</p>
             <span
               className="flex justify-between items-center space-x-4 cursor-pointer"
-              //onClick={showDrawer}
               onMouseOver={showDrawer}
-              //onMouseOut={closeDrawer}
             >
               <p className="text-[#133B69] text-[16px] font-normal">Learn</p>
               <IoIosArrowDown className="text-[#17477E] w-[20px] h-[20px]" />
