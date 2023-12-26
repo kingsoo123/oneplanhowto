@@ -1,18 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 
 const MobileModal = ({ setShow }) => {
   const [isToggle, setIsToggle] = useState(false);
+  const [position, setPosition] = useState("fixed"); // initially its fixed
+
+  useEffect(() => {
+    document.body.style.position = position;
+  }, [position]);
+
   return (
-    <div className="fixed z-10 left-0 top-0 bottom-0 right-0 w-full  backdrop">
+    <div className="fixed z-10 left-0 top-0 bottom-0 right-0 w-full backdrop">
       <div className="w-[100%] bg-[#17477E] rounded-b-3xl py-6 px-3">
         <div className="w-full flex justify-end items-center">
           <IoCloseOutline
             className="text-white w-[50px] h-[50px]"
-            onClick={() => setShow(false)}
+            onClick={() => {
+              setShow(false);
+              window.location.reload(false);
+            }}
           />
         </div>
         <div className="space-y-5">
@@ -23,7 +32,10 @@ const MobileModal = ({ setShow }) => {
           <div>
             <span
               className="flex items-center space-x-3"
-              onClick={() => setIsToggle(!isToggle)}
+              onClick={() => {
+                setIsToggle(!isToggle);
+                //setFixedDoc();
+              }}
             >
               <p className="text-white font-medium text-[20px]">Learn</p>
               <IoIosArrowForward className="text-white w-[30px] h-[30px]" />
