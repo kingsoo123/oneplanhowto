@@ -23,7 +23,7 @@ const WithdrawalTab = () => {
           )}
         </span>
         <p className="font-normal text-sm">
-          Step by step guide on how to deposit to your account
+          Step by step guide on how to withdraw from your account
         </p>
       </div>
 

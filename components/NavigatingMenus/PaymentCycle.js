@@ -29,7 +29,7 @@ const PaymentCycleTab = () => {
           className="font-normal text-sm"
           onClick={() => setIsToggle(!isToggle)}
         >
-          Step by step guide on how to deposit to your account
+          Step by step guide on how to manage your payment cycle
         </p>
 
         {isToggle && (

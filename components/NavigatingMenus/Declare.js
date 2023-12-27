@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
-import DepositTabs from "./DepositTabs";
+import DeclareTabs from "./DeclareTabs";
 
 const DeclareTab = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -22,14 +22,14 @@ const DeclareTab = () => {
           )}
         </span>
         <p className="font-normal text-sm">
-          Step by step guide on how to deposit to your account
+          Step by step guide on how to declare your inheritance
         </p>
       </div>
 
       {isToggle && (
         <>
           <div className="bg-[#D1DAE5] w-[100%] h-[1px]"></div>
-          <DepositTabs />
+          <DeclareTabs />
         </>
       )}
     </div>

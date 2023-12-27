@@ -32,7 +32,7 @@ const NextOfKinTab = () => {
           className="font-normal text-sm"
           onClick={() => setIsToggle(!isToggle)}
         >
-          Step by step guide on how to deposit to your account
+          Step by step guide on how to manage your next of kin
         </p>
 
         {isToggle && (

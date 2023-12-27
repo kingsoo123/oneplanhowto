@@ -17,7 +17,7 @@ const AddEmailTab = () => {
           <IoIosArrowForward />
         </span>
         <p className="font-normal text-sm">
-          Step by step guide on how to deposit to your account
+          Step by step guide on how to add email address
         </p>
       </div>
 
