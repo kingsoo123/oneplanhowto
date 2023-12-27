@@ -19,8 +19,8 @@ const NavigatingMenu = () => {
       </div>
       <div className="flex justify-center items-center mt-4">
         <p className="text-[#696969] font-normal text-center md:text-[24px]">
-          Dial <span className="md:font-semibold">*434#,</span> Select{" "}
-          <span className="md:font-semibold">[1] Pension</span>
+          Dial <span className="font-semibold">*434#,</span> Select{" "}
+          <span className="font-semibold">[1] Pension</span>
         </p>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-start mt-12  md:space-x-12">
