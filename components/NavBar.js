@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Drawer } from "antd";
 import Image from "next/image";
 import logo from "../assets/logo.png";
@@ -21,6 +21,14 @@ const NavBar = () => {
   const onClose = () => {
     setOpen(false);
   };
+
+  useEffect(() => {
+    if (show) {
+      document.body.style.position = "fixed";
+    } else {
+      document.body.style.position = "";
+    }
+  }, [show]);
 
   return (
     <nav className="fixed flex justify-between items-center h-[61px] md:pl-[80px] md:pr-[80px] pt-4 bg-white w-full">
@@ -93,7 +101,7 @@ const NavBar = () => {
         </div>
       </Drawer>
 
-      {show && <MobileModal setShow={setShow} />}
+      {show && <MobileModal setShow={setShow} show={show} />}
     </nav>
   );
 };

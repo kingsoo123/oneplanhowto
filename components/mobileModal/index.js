@@ -1,16 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 
-const MobileModal = ({ setShow }) => {
+const MobileModal = ({ setShow, show }) => {
   const [isToggle, setIsToggle] = useState(false);
-  const [position, setPosition] = useState("fixed"); // initially its fixed
 
-  useEffect(() => {
-    document.body.style.position = position;
-  }, [position]);
+  console.log(show, "SHOW:::::");
+  // initially its fixed
 
   return (
     <div className="fixed z-10 left-0 top-0 bottom-0 right-0 w-full backdrop">
@@ -20,7 +18,9 @@ const MobileModal = ({ setShow }) => {
             className="text-white w-[50px] h-[50px]"
             onClick={() => {
               setShow(false);
-              window.location.reload(false);
+              // setTimeout(() => {
+              //   window.location.reload(false);
+              // }, 1000);
             }}
           />
         </div>
