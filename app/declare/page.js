@@ -10,7 +10,7 @@ const DeclarationCertificate = () => {
       </div>
 
       <div className="w-full flex justify-center items-center">
-        <p className="mt-6 text-[#133B69] text-center md:text-justify font-semibold md:font-bold text-[64px] md:text-[80px] leading-tight">
+        <p className="mt-6 text-[#133B69] text-center md:text-justify font-semibold md:font-bold text-[54px] md:text-[80px] leading-tight">
           Declaration Certificate
         </p>
       </div>
