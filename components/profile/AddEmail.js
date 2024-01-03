@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import AddEmailTabs from "./AddEmailTabs";
 
 const AddEmailTab = () => {
@@ -14,7 +15,11 @@ const AddEmailTab = () => {
       >
         <span className="w-full flex justify-between items-center">
           <p className="text-[#133B69] font-semibold text-[20px]">Add Email</p>
-          <IoIosArrowForward />
+          {isToggle ? (
+            <IoIosArrowDown className="text-[#17477E] w-[20px] h-[20px]" />
+          ) : (
+            <IoIosArrowForward className="text-[#17477E] w-[20px] h-[20px]" />
+          )}
         </span>
         <p className="font-normal text-sm">
           Step by step guide on how to add email address

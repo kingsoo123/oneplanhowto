@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
-import DepositTabs from "../NavigatingMenus/DepositTabs";
+import { IoIosArrowDown } from "react-icons/io";
 import ChangePinTabs from "./ChangePinTabs";
 
 const ChangePinTab = () => {
@@ -15,7 +15,11 @@ const ChangePinTab = () => {
       >
         <span className="w-full flex justify-between items-center ">
           <p className="text-[#133B69] font-semibold text-[20px]">Change PIN</p>
-          <IoIosArrowForward />
+          {isToggle ? (
+            <IoIosArrowDown className="text-[#17477E] w-[20px] h-[20px]" />
+          ) : (
+            <IoIosArrowForward className="text-[#17477E] w-[20px] h-[20px]" />
+          )}
         </span>
         <p className="font-normal text-sm">
           Step by step guide on how to change your PIN
